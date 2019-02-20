@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/dialog_container"
+    android:paddingStart="@dimen/hMargin"
+    android:paddingTop="@dimen/hMargin"
+    android:paddingEnd="@dimen/hMargin">
+
+    <TextView
+        android:id="@+id/bigTitleTV"
+        style="@style/big_title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/regularTextTV"
+        style="@style/regular_text"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/bigTitleTV" />
+
+    <Button
+        android:id="@+id/leftButton"
+        style="@style/left_dialog_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/hMargin"
+        android:gravity="center"
+        app:layout_constraintEnd_toStartOf="@id/rightButton"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/regularTextTV" />
+
+    <Button
+        android:id="@+id/rightButton"
+        style="@style/right_dialog_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/hMargin"
+        android:gravity="center"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@id/leftButton"
+        app:layout_constraintTop_toBottomOf="@id/regularTextTV" />
+
+</android.support.constraint.ConstraintLayout>

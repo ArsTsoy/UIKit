@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <declare-styleable name="InAppNotifications">
+        <attr name="background_color" format="color"></attr>
+        <attr name="title_text" format="string"></attr>
+        <attr name="text_text" format="string"></attr>
+        <attr name="image" format="reference"></attr>
+        <attr name="text_style" format="reference"></attr>
+        <attr name="title_style" format="reference"></attr>
+    </declare-styleable>
+</resources>

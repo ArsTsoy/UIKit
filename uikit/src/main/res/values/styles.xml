@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <style name="list_item_with_icon_history">
+        <item name="android:paddingTop">10dp</item>
+        <item name="android:paddingBottom">10dp</item>
+        <item name="android:paddingLeft">24dp</item>
+        <item name="android:paddingRight">24dp</item>
+    </style>
+
+    <style name="list_item_with_icon_branch_card">
+        <item name="android:paddingTop">10dp</item>
+        <item name="android:paddingBottom">10dp</item>
+        <item name="android:paddingLeft">24dp</item>
+        <item name="android:paddingRight">24dp</item>
+    </style>
+
+    <style name="list_item_without_icons">
+        <item name="android:paddingTop">10dp</item>
+        <item name="android:paddingBottom">10dp</item>
+        <item name="android:paddingLeft">24dp</item>
+        <item name="android:paddingRight">24dp</item>
+    </style>
+
+    <style name="payment_button_style">
+        <item name="android:textSize">@dimen/small</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:textColor">@color/text_main_white</item>
+        <item name="android:layout_marginEnd">36dp</item>
+        <item name="android:layout_marginStart">36dp</item>
+        <item name="android:layout_marginTop">24dp</item>
+        <item name="android:layout_marginBottom">24dp</item>
+        <item name="android:layout_height">48dp</item>
+        <item name="android:maxWidth">288dp</item>
+        <item name="android:background">@drawable/payment_button_react</item>
+    </style>
+
+    <style name="action_button_style">
+        <item name="android:textSize">@dimen/small</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:textColor">@color/text_main_white</item>
+        <item name="android:layout_marginEnd">36dp</item>
+        <item name="android:layout_marginStart">36dp</item>
+        <item name="android:layout_marginTop">24dp</item>
+        <item name="android:layout_marginBottom">24dp</item>
+        <item name="android:layout_height">48dp</item>
+        <item name="android:layout_width">288dp</item>
+        <item name="android:background">@drawable/action_button_react</item>
+    </style>
+
+    <style name="right_dialog_button">
+        <item name="android:textSize">@dimen/small</item>
+        <item name="android:textColor">@color/text_main_watermelon</item>
+        <item name="android:background">@color/transparent</item>
+    </style>
+
+    <style name="left_dialog_button">
+        <item name="android:textSize">@dimen/small</item>
+        <item name="android:textColor">@color/text_main_gray</item>
+        <item name="android:background">@color/transparent</item>
+    </style>
+
+
+    <style name="in_app_red_notification">
+        <item name="android:textSize">@dimen/small</item>
+        <item name="android:background">@color/transparent</item>
+    </style>
+
+
+
+
+</resources>
