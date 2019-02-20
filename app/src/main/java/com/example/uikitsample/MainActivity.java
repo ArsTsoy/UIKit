@@ -13,6 +13,7 @@ import com.kotlin.dialog.ChocoDialogInterface;
 import com.kotlin.dialog.advanced_dialog.ChocoAdvancedDialog;
 import com.kotlin.dialog.simple_dialog.ChocoSimpleDialog;
 import com.kotlin.in_app_notification.InAppNotification;
+import com.kotlin.in_app_notification.OnNotificationClickListener;
 
 public class MainActivity extends AppCompatActivity {
     Button payment_button;
@@ -54,9 +55,15 @@ public class MainActivity extends AppCompatActivity {
         });
     }
 
-    private void showNotification(View v) {
-        InAppNotification snack = InAppNotification.make(v, "asd", "das", R.color.main_green, R.drawable.image2);
+    private void showNotification(final View v) {
+        InAppNotification snack = InAppNotification.Companion.make(v, "Оплата прошла успешно", "Спасибо за пользованием нашим приложением", R.color.main_green, R.drawable.image2);
         snack.setIndefinite(true);
+        snack.setOnNotificationClickListener(new OnNotificationClickListener() {
+            @Override
+            public void onNotificationClick() {
+                Toast.makeText(v.getContext(), "Click", Toast.LENGTH_SHORT).show();
+            }
+        });
         snack.show();
     }
 
