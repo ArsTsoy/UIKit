@@ -54,8 +54,8 @@ class InAppNotification private constructor(
         configSnackDesign()
 
         custom.setOnClickListener(View.OnClickListener {
-            onNotificationClickListener?.let {
-                it.onNotificationClick()
+            onNotificationClickListener?.run {
+                onNotificationClick()
             }
         })
     }

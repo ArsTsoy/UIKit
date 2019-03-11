@@ -28,31 +28,31 @@ public class MainActivity extends AppCompatActivity {
     @Override
     protected void onCreate(final Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_main);
+        setContentView(R.layout.activity_test);
 
-        payment_button = findViewById(R.id.payment_button);
-        payment_button.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-//                showEditDialog();
-                showNotification(v);
-            }
-        });
-        payment_button2 = findViewById(R.id.payment_button2);
-        payment_button2.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                showSimpleDialog();
-            }
-        });
-
-        action_button = findViewById(R.id.action_button);
-        action_button.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                showBottomSheet();
-            }
-        });
+//        payment_button = findViewById(R.id.payment_button);
+//        payment_button.setOnClickListener(new View.OnClickListener() {
+//            @Override
+//            public void onClick(View v) {
+////                showEditDialog();
+//                showNotification(v);
+//            }
+//        });
+//        payment_button2 = findViewById(R.id.payment_button2);
+//        payment_button2.setOnClickListener(new View.OnClickListener() {
+//            @Override
+//            public void onClick(View v) {
+//                showSimpleDialog();
+//            }
+//        });
+//
+//        action_button = findViewById(R.id.action_button);
+//        action_button.setOnClickListener(new View.OnClickListener() {
+//            @Override
+//            public void onClick(View v) {
+//                showBottomSheet();
+//            }
+//        });
     }
 
     private void showNotification(final View v) {
@@ -88,7 +88,6 @@ public class MainActivity extends AppCompatActivity {
                 })
                 .setURLImage(imageURL)
                 .create();
-
 
         editNameDialogFragment.show(fm, "fragment_edit_name");
     }

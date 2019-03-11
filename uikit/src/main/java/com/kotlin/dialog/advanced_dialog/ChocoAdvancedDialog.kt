@@ -9,10 +9,10 @@ import android.view.ViewGroup
 import android.view.animation.Animation
 import android.view.animation.AnimationUtils
 import com.bumptech.glide.Glide
-import com.bumptech.glide.load.DataSource
 import com.bumptech.glide.load.engine.GlideException
 import com.bumptech.glide.request.RequestListener
 import com.bumptech.glide.request.target.Target
+
 import com.example.uikit.R
 import com.kotlin.dialog.ChocoDialog
 import com.kotlin.dialog.ChocoDialogInterface
@@ -62,17 +62,18 @@ class ChocoAdvancedDialog : ChocoDialog() {
 
         imageResourceId?.let {
             imageIV?.setImageResource(it)
+
         }
 
         imageUrl?.let {
             Glide.with(view)
                     .load(it)
                     .listener(object : RequestListener<Drawable> {
-                        override fun onLoadFailed(e: GlideException?, model: Any, target: Target<Drawable>, isFirstResource: Boolean): Boolean {
+                        override fun onLoadFailed(e: GlideException?, model: Any?, target: Target<Drawable>?, isFirstResource: Boolean): Boolean {
                             return false
                         }
 
-                        override fun onResourceReady(resource: Drawable, model: Any, target: Target<Drawable>, dataSource: DataSource, isFirstResource: Boolean): Boolean {
+                        override fun onResourceReady(resource: Drawable?, model: Any?, target: com.bumptech.glide.request.target.Target<Drawable>?, dataSource: com.bumptech.glide.load.DataSource?, isFirstResource: Boolean): Boolean {
                             imageLoading.animation = null
                             imageLoading.visibility = View.INVISIBLE
                             return false
