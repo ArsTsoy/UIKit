@@ -91,6 +91,7 @@ class InAppNotification private constructor(
                 .into(image)
     }
 
+
     fun show() {
         mSnackbar.show()
     }
